@@ -553,7 +553,10 @@ export default {
                 translationPrefix = "Avg. ";
             }
 
-            if (this.monitor.type === "http" || this.monitor.type === "keyword" || this.monitor.type === "json-query") {
+            if (this.monitor.type === "http" 
+                || this.monitor.type === "keyword" 
+                || this.monitor.type === "json-query"
+                || this.monitor.type === "real-browser") {
                 return this.$t(translationPrefix + "Response");
             }
 
